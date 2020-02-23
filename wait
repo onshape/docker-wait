@@ -39,11 +39,10 @@ do
   done
 
   if [ "$seconds" -lt "$timeout" ]; then
-    echo "  up!"
+    echo "  up"
   else
     echo "  ERROR: unable to connect" >&2
     exit 1
   fi
 done
-echo "Everything is up"
 exit 0
